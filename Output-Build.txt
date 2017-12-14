@@ -1,0 +1,19 @@
+﻿1>------ Build started: Project: trrblauncher, Configuration: Debug Any CPU ------
+1>  trrblauncher -> C:\Users\dady1\source\repos\trrblauncher\trrblauncher\bin\Debug\TheReunionReborn.exe
+Building trrblauncher...
+2>------ Publish started: Project: trrblauncher, Configuration: Debug Any CPU ------
+Connecting to 'ftp://files.000webhost.com/htdocs/'...
+Publishing files...
+Verifying publish.htm... (1 of 9)
+Verifying setup.exe... (2 of 9)
+Verifying TheReunionReborn.application... (3 of 9)
+Verifying DotNetZip.dll.deploy... (4 of 9)
+Verifying TheReunionReborn.application... (5 of 9)
+Verifying TheReunionReborn.exe.config.deploy... (6 of 9)
+Verifying TheReunionReborn.exe.deploy... (7 of 9)
+Verifying TheReunionReborn.exe.manifest... (8 of 9)
+Verifying wow.ico.deploy... (9 of 9)
+Publish success.
+http://reunion-launcher.unaux.com/publish.htm
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Publish: 1 succeeded, 0 failed, 0 skipped ==========
