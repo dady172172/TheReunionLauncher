@@ -32,6 +32,8 @@ Public Class Addons
     Public Sub PopulateInstalledAddonList()
         If Directory.Exists(AddonsDir) Then
             ListBox2.Items.Clear()
+
+
             If AddonsDir = Nothing Then Exit Sub
             Dim dInfo As New System.IO.DirectoryInfo(AddonsDir)
 
