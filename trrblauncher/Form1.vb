@@ -58,7 +58,7 @@ Public Class TRRMainForm
         patchInfoTXT = Nothing
         '----------- check settings and set checkboxes at load
         If My.Settings.workingdir = "" Then
-            MsgBox("You have not selected the path to wow.exe.. This can be set in settings. If this launcher is in the same directory as wow.exe. You can ignore this message. ", MsgBoxStyle.OkOnly, "No Directory Selected")
+            MsgBox("You have not selected the path to wow.exe.. This can be set in the settings. If the launcher is in the same directory as wow.exe. You can ignore this message. ", MsgBoxStyle.OkOnly, "No Directory Selected")
             My.Settings.workingdir = "wow"
             My.Settings.Save()
         End If
@@ -152,7 +152,7 @@ Public Class TRRMainForm
     End Sub
     '' website button
     Private Sub ToolStripButton3_Click(sender As Object, e As EventArgs) Handles ToolStripButton3.Click
-        Process.Start("https://reunion-reborn.com/")
+        Process.Start("https://www.reunion-reborn.com/")
     End Sub
     '' resize end
     Private Sub TRRMainForm_ResizeEnd(sender As Object, e As EventArgs) Handles Me.ResizeEnd
@@ -161,7 +161,7 @@ Public Class TRRMainForm
     End Sub
     '' discord button
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        Process.Start("https://discord.gg/ZfpmRVp")
+        Process.Start("https://discordapp.com/invite/ZfpmRVp")
     End Sub
     '' select directory button
     Dim FBD1 As New FolderBrowserDialog
@@ -182,7 +182,7 @@ Public Class TRRMainForm
             If File.Exists(FBD1.SelectedPath & "/Wow.exe") Then
                 My.Settings.workingdir = FBD1.SelectedPath
                 My.Settings.Save()
-                MsgBox("Saved Path. You may now download patches or play.")
+                MsgBox("Saved Path. You may now download the patches or play.")
                 TRRMainForm_Load(sender:=Nothing, e:=EventArgs.Empty)
             Else
                 MsgBox("Could not find Wow.exe in that directory. Please try again.")
@@ -356,7 +356,7 @@ Public Class TRRMainForm
 
         If My.Settings.CheckboxCheckForWowEXE = True Then
             If Not IO.File.Exists(curdirdim & "\Wow.exe") Then
-                MsgBox("Wow.exe doesn't exist in the folder selected. Please go to setting and set the working directory or change settings to look for wow.exe.", MsgBoxStyle.OkOnly, "Can't find Wow.exe")
+            MsgBox("Wow.exe doesn't exist in the folder selected. Please go to the settings and set the correct directory or change the settings to look for wow.exe.", MsgBoxStyle.OkOnly, "Can't find Wow.exe")
             End If
         End If
         If My.Settings.CheckboxSetrealmlist = True Then
@@ -512,7 +512,7 @@ Public Class TRRMainForm
     '' addons folder button
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         Dim addonsDir As String = curdirdim & "\Interface\AddOns"
-        If IO.Directory.Exists(addonsDir) Then Process.Start(curdirdim & "\Interface\AddOns") Else MsgBox("Could not find addons folder!!", MsgBoxStyle.OkOnly, "Addons Folder???")
+        If IO.Directory.Exists(addonsDir) Then Process.Start(curdirdim & "\Interface\AddOns") Else MsgBox("Could not find the addons folder!!", MsgBoxStyle.OkOnly, "Addons Folder???")
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click

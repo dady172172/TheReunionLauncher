@@ -7,7 +7,7 @@
     Public Sub load()
 
         If My.Settings.workingdir = "" Then
-            MsgBox("You have not selected the path to wow.exe.. This can be set in settings. If this launcher is in the same directory as wow.exe. You can ignore this message. ", MsgBoxStyle.OkOnly, "No Directory Selected")
+            MsgBox("You have not set the path to wow.exe.. This can be set in the settings. If the launcher is in the same directory as wow.exe. You can ignore this message. ", MsgBoxStyle.OkOnly, "No Directory Selected")
             My.Settings.workingdir = "wow"
             My.Settings.Save()
             If My.Settings.CheckboxCheckForWowEXE = True Then

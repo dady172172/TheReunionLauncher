@@ -36,15 +36,15 @@ Public Class Download
         ProgressBar1.Value = 0
         GetSettings()
         If setInstall = "uninstall" Then Me.Text = "Uninstall Patch" Else Me.Text = "Download Patch"
-        If setType = "model" And setInstall = "Download" Then Label1.Text = "Downloading Model Patches" : Label2.Text = "Click start to begin downloading model Zip. After download they will be unziped."
-        If setType = "model" And setInstall = "Uninstall" Then Label1.Text = "Removeing Model Patches" : Label2.Text = "Click start to remove model patches"
-        If setType = "login" And setInstall = "Download" Then Label1.Text = "Downloading Login Screen Patch" : Label2.Text = "Click start to download the login screen patch"
-        If setType = "login" And setInstall = "Uninstall" Then Label1.Text = "Removing Login Screen Patch" : Label2.Text = "Click start to remove login screen patch"
-        If setType = "water" And setInstall = "Download" Then Label1.Text = "Downloading Water Patch" : Label2.Text = "Click start to download water texture patch"
-        If setType = "water" And setInstall = "Uninstall" Then Label1.Text = "Removing Water Patch" : Label2.Text = "Click start to remove water texture patch"
-        If setType = "addons" Then Label1.Text = "Deleting All Addons" : Label2.Text = "Click start to delete all addons in the addons directory. This will not remove any of the default files World of War Craft needs."
-        If setType = "backup" Then Label1.Text = "Backup Addons Folder" : Label2.Text = "Click start to backup your addons folder. When finished you can find addons.zip in the interface folder. If there is an Addons.zip already in that folder it will be deleted."
-        If setType = "installAddon" Then Label1.Text = "Download " & setInstall : Label2.Text = "click start to download and extract the zip file to the addons directory. When finished extracting will deleted the zip file."
+        If setType = "model" And setInstall = "Download" Then Label1.Text = "Downloading Model Patches" : Label2.Text = "Click start to begin downloading Model Patches. After download they will be installed."
+        If setType = "model" And setInstall = "Uninstall" Then Label1.Text = "Removing Model Patches" : Label2.Text = "Click start to remove Model Patches"
+        If setType = "login" And setInstall = "Download" Then Label1.Text = "Downloading Login Screen Patch" : Label2.Text = "Click start to download the Login Screen patch"
+        If setType = "login" And setInstall = "Uninstall" Then Label1.Text = "Removing Login Screen Patch" : Label2.Text = "Click start to remove Login Screen patch"
+        If setType = "water" And setInstall = "Download" Then Label1.Text = "Downloading Water Patch" : Label2.Text = "Click start to download the Water patch"
+        If setType = "water" And setInstall = "Uninstall" Then Label1.Text = "Removing Water Patch" : Label2.Text = "Click start to remove the Water patch"
+        If setType = "addons" Then Label1.Text = "Deleting All Addons" : Label2.Text = "Click start to delete all the addons in the addons directory. This will not remove any of the default addons World of Warcraft needs."
+        If setType = "backup" Then Label1.Text = "Backup Addons Folder" : Label2.Text = "Click start to backup your addons folder. When finished you can find addons.zip in the interface folder. If there is an addons.zip already in that folder it will be deleted."
+        If setType = "installAddon" Then Label1.Text = "Download " & setInstall : Label2.Text = "click start to download and extract the zip file to the addons directory. When finished extracting we will delete the zip file."
 
 
         CheckForIllegalCrossThreadCalls = False
@@ -81,7 +81,7 @@ Public Class Download
         BackgroundWorker2.CancelAsync()
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Moddels have been deleted!")
+        MsgBox("Models Patches have been deleted!")
         Me.Close()
 
     End Sub
@@ -95,7 +95,7 @@ Public Class Download
         BackgroundWorker2.CancelAsync()
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Login screen patch has been deleted!")
+        MsgBox("Login Screen patch has been deleted!")
         Me.Close()
     End Sub
 
@@ -108,7 +108,7 @@ Public Class Download
         BackgroundWorker2.CancelAsync()
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Water patch has been delete!")
+        MsgBox("Water Patch has been deleted!")
         Me.Close()
     End Sub
 
@@ -178,7 +178,7 @@ Public Class Download
         TimerWorking.Stop()
         'BackgroundWorker2.CancelAsync()
         Threading.Thread.Sleep(100)
-        MsgBox("Done Downloading and unzipping moddel patches.")
+        MsgBox("Done Downloading and installing model patches.")
         Me.Close()
 
 
@@ -203,7 +203,7 @@ Public Class Download
         ElseIf setType = "installAddon" Then
             InstallAddon()
         Else
-            MsgBox("You shouldent see this message box if you do please contact keathunsar on discord and let him know you seen this message. ERROR = download.vb1", MsgBoxStyle.OkOnly, "ERROR!!!")
+            MsgBox("You shouldn't see this message box, if you do please contact Keathunsar on discord and let him know you've seen this message. ERROR = download.vb1", MsgBoxStyle.OkOnly, "ERROR!!!")
         End If
     End Sub
     Dim WhatAmIWorkingOn As String
@@ -267,7 +267,7 @@ Public Class Download
     Private Sub Loginwc_DownloadFileCompleted(sender As Object, e As AsyncCompletedEventArgs) Handles Loginwc.DownloadFileCompleted
         ProgressBar1.Value = 100
         TimerWorking.Stop()
-        MsgBox("Login patch downloaded. Ready to play.", MsgBoxStyle.OkOnly, "Done!")
+        MsgBox("Login patch has been downloaded. Ready to play.", MsgBoxStyle.OkOnly, "Done!")
         Me.Close()
     End Sub
 
@@ -279,7 +279,7 @@ Public Class Download
     Private Sub Waterwc_DownloadFileCompleted(sender As Object, e As AsyncCompletedEventArgs) Handles Waterwc.DownloadFileCompleted
         ProgressBar1.Value = 100
         TimerWorking.Stop()
-        MsgBox("Water patch downloaded. Ready to play.", MsgBoxStyle.OkOnly, "Done!")
+        MsgBox("Water patch has been downloaded. Ready to play.", MsgBoxStyle.OkOnly, "Done!")
         Me.Close()
     End Sub
 
@@ -408,7 +408,7 @@ Public Class Download
             If File.Exists(WD & "\Interface\AddOns\TMPAddon.zip") Then File.Delete(WD & "\Interface\AddOns\TMPAddon.zip")
         End If
 
-        MsgBox("Canceling Complete.")
+        MsgBox("Cancel Complete.")
         Me.Close()
 
     End Sub

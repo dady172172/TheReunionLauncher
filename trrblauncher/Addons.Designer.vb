@@ -79,7 +79,7 @@ Partial Class Addons
         Me.ToolStripButton1.Padding = New System.Windows.Forms.Padding(2)
         Me.ToolStripButton1.Size = New System.Drawing.Size(175, 22)
         Me.ToolStripButton1.Text = "Type"
-        Me.ToolStripButton1.ToolTipText = "Only show addons of type"
+        Me.ToolStripButton1.ToolTipText = "Only show addons of this type"
         '
         'GroupBox2
         '
@@ -109,7 +109,7 @@ Partial Class Addons
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(166, 263)
         Me.RichTextBox1.TabIndex = 1
-        Me.RichTextBox1.Text = "Select an addon for discription"
+        Me.RichTextBox1.Text = "Select an addon for description"
         '
         'Button1
         '
@@ -131,7 +131,7 @@ Partial Class Addons
         Me.ListBox1.Size = New System.Drawing.Size(179, 452)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see discription.")
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see description.")
         '
         'Addons
         '
