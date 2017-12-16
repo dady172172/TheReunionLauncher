@@ -21,7 +21,7 @@ Public Class SetUserPassword
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" And TextBox2.Text = "" Then
-            Dim msgre As MsgBoxResult = MsgBox("Are you sure you don't want to set a user name and password for auto login?", MsgBoxStyle.YesNoCancel, "Are you sure you want to quit?")
+            Dim msgre As MsgBoxResult = MsgBox("Are you sure you don't want to set a username and password for auto login?", MsgBoxStyle.YesNoCancel, "Are you sure you want to quit?")
             If msgre = MsgBoxResult.Cancel Then
                 Exit Sub
             ElseIf msgre = MsgBoxResult.No Then
@@ -34,9 +34,9 @@ Public Class SetUserPassword
                 Me.Close()
             End If
         ElseIf Not TextBox1.Text = "" And TextBox2.Text = "" Then
-            MsgBox("You must enter a password to use the auto login.", MsgBoxStyle.OkOnly, "Need Password")
+            MsgBox("You must enter a password to use the auto login.", MsgBoxStyle.OkOnly, "Needs Password")
         ElseIf TextBox1.Text = "" And Not TextBox2.Text = "" Then
-            MsgBox("You must enter a username to use the auto login.", MsgBoxStyle.OkOnly, "Need Pasword")
+            MsgBox("You must enter a username to use the auto login.", MsgBoxStyle.OkOnly, "Needs Username")
         ElseIf Not TextBox1.Text = "" And Not TextBox2.Text = "" Then
             If Not My.Settings.Usernames = "" Then
                 For i = 0 To usernames.Length - 1
