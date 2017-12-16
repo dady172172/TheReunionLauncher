@@ -121,7 +121,7 @@ Partial Class TRRMainForm
         Me.GroupBox4.Size = New System.Drawing.Size(283, 260)
         Me.GroupBox4.TabIndex = 4
         Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Addons Options"
+        Me.GroupBox4.Text = "Addon Options"
         '
         'Button12
         '
@@ -146,7 +146,7 @@ Partial Class TRRMainForm
         Me.Button5.Size = New System.Drawing.Size(94, 29)
         Me.Button5.TabIndex = 8
         Me.Button5.Text = "Backup All"
-        Me.ToolTip1.SetToolTip(Me.Button5, "Backup the addons folder into a zip")
+        Me.ToolTip1.SetToolTip(Me.Button5, "Backup the addons folder into a zip file")
         Me.Button5.UseVisualStyleBackColor = True
         '
         'ListBox1
@@ -159,7 +159,7 @@ Partial Class TRRMainForm
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(164, 242)
         Me.ListBox1.TabIndex = 7
-        Me.ToolTip1.SetToolTip(Me.ListBox1, "These are you addons")
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "These are your addons")
         '
         'Button7
         '
@@ -171,7 +171,7 @@ Partial Class TRRMainForm
         Me.Button7.Size = New System.Drawing.Size(94, 29)
         Me.Button7.TabIndex = 6
         Me.Button7.Text = "Open"
-        Me.ToolTip1.SetToolTip(Me.Button7, "Opens your addons folder")
+        Me.ToolTip1.SetToolTip(Me.Button7, "Open your addons folder")
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
@@ -184,7 +184,7 @@ Partial Class TRRMainForm
         Me.Button6.Size = New System.Drawing.Size(94, 29)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "Get More"
-        Me.ToolTip1.SetToolTip(Me.Button6, "Website for 3.3.5 addons")
+        Me.ToolTip1.SetToolTip(Me.Button6, "Website to get more 3.3.5a addons")
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button4
@@ -197,7 +197,7 @@ Partial Class TRRMainForm
         Me.Button4.Size = New System.Drawing.Size(94, 29)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Delete All"
-        Me.ToolTip1.SetToolTip(Me.Button4, "Deletes all addons except Blizzards")
+        Me.ToolTip1.SetToolTip(Me.Button4, "Delete all addons except the default addons")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -227,7 +227,7 @@ Partial Class TRRMainForm
         Me.Button13.Size = New System.Drawing.Size(57, 27)
         Me.Button13.TabIndex = 5
         Me.Button13.Text = "Set"
-        Me.ToolTip1.SetToolTip(Me.Button13, "Delets your cash folder")
+        Me.ToolTip1.SetToolTip(Me.Button13, "Delete your cache folder")
         Me.Button13.UseVisualStyleBackColor = True
         '
         'CheckBox4
@@ -252,7 +252,7 @@ Partial Class TRRMainForm
         Me.Button3.Size = New System.Drawing.Size(94, 29)
         Me.Button3.TabIndex = 3
         Me.Button3.Text = "Delete Cache"
-        Me.ToolTip1.SetToolTip(Me.Button3, "Delets your cash folder")
+        Me.ToolTip1.SetToolTip(Me.Button3, "Delete your cache folder")
         Me.Button3.UseVisualStyleBackColor = True
         '
         'CheckBox2
@@ -262,8 +262,8 @@ Partial Class TRRMainForm
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(164, 21)
         Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Set Realmlist Each Time"
-        Me.ToolTip1.SetToolTip(Me.CheckBox2, "Sets realmlist everytime you press play")
+        Me.CheckBox2.Text = "Set Realmlist Every Time"
+        Me.ToolTip1.SetToolTip(Me.CheckBox2, "Set realmlist everytime you press play")
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'CheckBox1
@@ -277,7 +277,7 @@ Partial Class TRRMainForm
         Me.CheckBox1.Size = New System.Drawing.Size(135, 21)
         Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.Text = "Check for wow.exe"
-        Me.ToolTip1.SetToolTip(Me.CheckBox1, "you can use this if you renamed your wow.exe")
+        Me.ToolTip1.SetToolTip(Me.CheckBox1, "you can use this if you have renamed your wow.exe")
         Me.CheckBox1.UseVisualStyleBackColor = False
         '
         'GroupBox1
@@ -314,7 +314,7 @@ Partial Class TRRMainForm
         Me.Button2.Size = New System.Drawing.Size(88, 29)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Browse"
-        Me.ToolTip1.SetToolTip(Me.Button2, "Select wow.exe so this launcher can work")
+        Me.ToolTip1.SetToolTip(Me.Button2, "Select wow.exe so the launcher can work")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox7
@@ -378,7 +378,7 @@ Partial Class TRRMainForm
         Me.WindowModeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FullscreenToolStripMenuItem, Me.EightBySixMenu, Me.twelveEightyBySevinTwonty, Me.TwelveEightyByEight, Me.TwelveEightyByNineSixty, Me.SixteenByNineZeroZero, Me.seventeenSixtyEightByNineNineTwo, Me.NinteenTwontyByTenEighty})
         Me.WindowModeToolStripMenuItem.Name = "WindowModeToolStripMenuItem"
         Me.WindowModeToolStripMenuItem.Size = New System.Drawing.Size(192, 26)
-        Me.WindowModeToolStripMenuItem.Text = "Window Mode"
+        Me.WindowModeToolStripMenuItem.Text = "Windowed Mode"
         '
         'FullscreenToolStripMenuItem
         '
@@ -390,43 +390,43 @@ Partial Class TRRMainForm
         '
         Me.EightBySixMenu.Name = "EightBySixMenu"
         Me.EightBySixMenu.Size = New System.Drawing.Size(289, 26)
-        Me.EightBySixMenu.Text = "Window 800x600"
+        Me.EightBySixMenu.Text = "Windowed 800x600"
         '
         'twelveEightyBySevinTwonty
         '
         Me.twelveEightyBySevinTwonty.Name = "twelveEightyBySevinTwonty"
         Me.twelveEightyBySevinTwonty.Size = New System.Drawing.Size(289, 26)
-        Me.twelveEightyBySevinTwonty.Text = "Window 1280x720 (Wide)"
+        Me.twelveEightyBySevinTwonty.Text = "Windowed 1280x720 (Wide)"
         '
         'TwelveEightyByEight
         '
         Me.TwelveEightyByEight.Name = "TwelveEightyByEight"
         Me.TwelveEightyByEight.Size = New System.Drawing.Size(289, 26)
-        Me.TwelveEightyByEight.Text = "Window 1280x800 (Wide)"
+        Me.TwelveEightyByEight.Text = "Windowed 1280x800 (Wide)"
         '
         'TwelveEightyByNineSixty
         '
         Me.TwelveEightyByNineSixty.Name = "TwelveEightyByNineSixty"
         Me.TwelveEightyByNineSixty.Size = New System.Drawing.Size(289, 26)
-        Me.TwelveEightyByNineSixty.Text = "Window 1280x960"
+        Me.TwelveEightyByNineSixty.Text = "Windowed 1280x960"
         '
         'SixteenByNineZeroZero
         '
         Me.SixteenByNineZeroZero.Name = "SixteenByNineZeroZero"
         Me.SixteenByNineZeroZero.Size = New System.Drawing.Size(289, 26)
-        Me.SixteenByNineZeroZero.Text = "window 1600x900 (Wide)"
+        Me.SixteenByNineZeroZero.Text = "windowed 1600x900 (Wide)"
         '
         'seventeenSixtyEightByNineNineTwo
         '
         Me.seventeenSixtyEightByNineNineTwo.Name = "seventeenSixtyEightByNineNineTwo"
         Me.seventeenSixtyEightByNineNineTwo.Size = New System.Drawing.Size(289, 26)
-        Me.seventeenSixtyEightByNineNineTwo.Text = "Window 1768x992 (Wide)"
+        Me.seventeenSixtyEightByNineNineTwo.Text = "Windowed 1768x992 (Wide)"
         '
         'NinteenTwontyByTenEighty
         '
         Me.NinteenTwontyByTenEighty.Name = "NinteenTwontyByTenEighty"
         Me.NinteenTwontyByTenEighty.Size = New System.Drawing.Size(289, 26)
-        Me.NinteenTwontyByTenEighty.Text = "Window 1920x1080  (Wide)"
+        Me.NinteenTwontyByTenEighty.Text = "Windowed 1920x1080  (Wide)"
         '
         'RadioButton2
         '
@@ -436,7 +436,7 @@ Partial Class TRRMainForm
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Close"
-        Me.ToolTip1.SetToolTip(Me.RadioButton2, "Closes launcher when you press play")
+        Me.ToolTip1.SetToolTip(Me.RadioButton2, "Close launcher when you press play")
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton1
@@ -482,7 +482,7 @@ Partial Class TRRMainForm
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Label5"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTip1.SetToolTip(Me.Label5, "Is better water texture installed?")
+        Me.ToolTip1.SetToolTip(Me.Label5, "Is the water patch installed?")
         '
         'GroupBox9
         '
@@ -516,7 +516,7 @@ Partial Class TRRMainForm
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Label3"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTip1.SetToolTip(Me.Label3, "Is our awsome login screen installed?")
+        Me.ToolTip1.SetToolTip(Me.Label3, "Is our Login Screen patch installed?")
         '
         'GroupBox8
         '
@@ -595,7 +595,7 @@ Partial Class TRRMainForm
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
         Me.ToolStripButton2.Size = New System.Drawing.Size(63, 22)
-        Me.ToolStripButton2.Text = "Reload"
+        Me.ToolStripButton2.Text = "RELOAD"
         '
         'Timer1
         '
