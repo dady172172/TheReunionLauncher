@@ -29,11 +29,8 @@ Partial Class Download
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TimerWorking = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.SuspendLayout()
         '
         'ProgressBar1
@@ -60,9 +57,9 @@ Partial Class Download
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(13, 72)
+        Me.Label2.Location = New System.Drawing.Point(13, 61)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(413, 62)
+        Me.Label2.Size = New System.Drawing.Size(413, 88)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Label2"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -77,9 +74,6 @@ Partial Class Download
         Me.Button1.Text = "Start"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'BackgroundWorker1
-        '
-        '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
@@ -90,10 +84,6 @@ Partial Class Download
         Me.Label3.Text = "Label3"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TimerWorking
-        '
-        Me.TimerWorking.Interval = 300
-        '
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.Transparent
@@ -103,10 +93,6 @@ Partial Class Download
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Label4"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'BackgroundWorker2
-        '
-        Me.BackgroundWorker2.WorkerSupportsCancellation = True
         '
         'Download
         '
@@ -140,9 +126,6 @@ Partial Class Download
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents Label3 As Label
-    Friend WithEvents TimerWorking As Timer
     Friend WithEvents Label4 As Label
-    Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
 End Class

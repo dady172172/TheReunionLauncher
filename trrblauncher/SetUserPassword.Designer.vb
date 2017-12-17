@@ -35,6 +35,7 @@ Partial Class SetUserPassword
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +55,7 @@ Partial Class SetUserPassword
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Controls.Add(Me.Button1)
@@ -63,11 +65,11 @@ Partial Class SetUserPassword
         Me.GroupBox1.Size = New System.Drawing.Size(538, 174)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Set your username and password"
+        Me.GroupBox1.Text = "Create/Edit"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(181, 123)
+        Me.Button2.Location = New System.Drawing.Point(211, 123)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(78, 30)
         Me.Button2.TabIndex = 5
@@ -82,7 +84,7 @@ Partial Class SetUserPassword
         Me.GroupBox2.Size = New System.Drawing.Size(192, 174)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Username Select"
+        Me.GroupBox2.Text = "Usernames"
         '
         'ListBox1
         '
@@ -92,10 +94,11 @@ Partial Class SetUserPassword
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(180, 148)
         Me.ListBox1.TabIndex = 2
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select a username to edit or delete")
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(97, 123)
+        Me.Button1.Location = New System.Drawing.Point(127, 123)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(78, 30)
         Me.Button1.TabIndex = 2
@@ -150,6 +153,15 @@ Partial Class SetUserPassword
         Me.TextBox2.Size = New System.Drawing.Size(226, 29)
         Me.TextBox2.TabIndex = 3
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(43, 123)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(78, 30)
+        Me.Button3.TabIndex = 6
+        Me.Button3.Text = "Clear"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'SetUserPassword
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
@@ -188,4 +200,5 @@ Partial Class SetUserPassword
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
