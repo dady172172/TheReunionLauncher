@@ -69,7 +69,7 @@ Public Class Download
         ProgressBar1.Value = 25 : File.Delete(FileModelB) : WhatAmIWorkingOn = "mc"
         ProgressBar1.Value = 50 : File.Delete(FileModelC) : WhatAmIWorkingOn = "md"
         ProgressBar1.Value = 75 : File.Delete(FileModelD) : Threading.Thread.Sleep(100)
-        ProgressBar1.Value = 100 : MsgBox("Moddel patches have been deleted!") : Close()
+        ProgressBar1.Value = 100 : MsgBox("Model patches have been deleted!") : Close()
 
     End Sub
 
@@ -89,7 +89,7 @@ Public Class Download
         File.Delete(FileWater)
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Water patch has been delete!")
+        MsgBox("Water patch has been deleted!")
         Me.Close()
     End Sub
 

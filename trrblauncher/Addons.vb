@@ -12,11 +12,6 @@ Public Class Addons
     Public AddonsToDeleteList As New List(Of String)()
 
     Public Sub Addons_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ToolStripButton1.DropDown.BackgroundImage = My.Resources.DarkBackground
-        ToolStripButton1.DropDown.LayoutStyle = ToolStripLayoutStyle.Table
-        ToolStripButton1.DropDown.BackgroundImageLayout = ImageLayout.Stretch
-        ToolStripButton1.DropDown.BackColor = Color.Transparent
-        ToolStripButton1.DropDown.ForeColor = SystemColors.ButtonFace
         PopulateXMLDims()
         PopulateTypeDropdown()
         PopulateInstalledAddonList()

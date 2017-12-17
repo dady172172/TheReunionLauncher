@@ -194,7 +194,7 @@ Partial Class TRRMainForm
         Me.LinkLabel4.TabStop = True
         Me.LinkLabel4.Text = "Delete Cache"
         Me.LinkLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.ToolTip1.SetToolTip(Me.LinkLabel4, "Deletes your cache folder")
+        Me.ToolTip1.SetToolTip(Me.LinkLabel4, "Delete your cache folder")
         '
         'CheckBox1
         '
@@ -461,7 +461,7 @@ Partial Class TRRMainForm
         Me.GroupBox8.Size = New System.Drawing.Size(163, 105)
         Me.GroupBox8.TabIndex = 1
         Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "Model Patchs"
+        Me.GroupBox8.Text = "Model Patches"
         '
         'LinkLabel1
         '

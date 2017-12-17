@@ -479,11 +479,17 @@ Public Class TRRMainForm
             My.Settings.Save()
             ToolStripButton6.Text = Itemname
             Exit Sub
+        Else
+            ToolStripButton6.Text = Itemname
+            My.Settings.AutoLogin = True
+            My.Settings.UserName = Itemname
+            Try
+                My.Settings.Password = GetPasswordByUser(Itemname)
+            Catch ex As Exception
+
+            End Try
         End If
-        ToolStripButton6.Text = Itemname
-        My.Settings.AutoLogin = True
-        My.Settings.UserName = Itemname
-        My.Settings.Password = GetPasswordByUser(Itemname)
+
 
     End Sub
 

@@ -65,7 +65,7 @@ Partial Class Addons
         Me.Button6.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button6.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button6.Location = New System.Drawing.Point(191, 24)
+        Me.Button6.Location = New System.Drawing.Point(227, 24)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(95, 23)
         Me.Button6.TabIndex = 3
@@ -128,7 +128,7 @@ Partial Class Addons
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button1.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(191, 53)
+        Me.Button1.Location = New System.Drawing.Point(227, 53)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(95, 23)
         Me.Button1.TabIndex = 2
@@ -147,8 +147,8 @@ Partial Class Addons
         Me.ListBox1.Size = New System.Drawing.Size(179, 292)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see discription. Once selected you can use download to downloa" &
-        "d the addon and extract the zip to your addons folder.")
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see discription. Once selected you can use the download button" &
+        ".")
         '
         'GroupBox2
         '
@@ -171,7 +171,7 @@ Partial Class Addons
         Me.Button5.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button5.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Location = New System.Drawing.Point(6, 140)
+        Me.Button5.Location = New System.Drawing.Point(6, 121)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(95, 23)
         Me.Button5.TabIndex = 6
@@ -184,7 +184,7 @@ Partial Class Addons
         Me.Button4.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button4.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button4.Location = New System.Drawing.Point(6, 111)
+        Me.Button4.Location = New System.Drawing.Point(6, 208)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(95, 23)
         Me.Button4.TabIndex = 5
@@ -197,7 +197,7 @@ Partial Class Addons
         Me.Button3.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button3.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button3.Location = New System.Drawing.Point(6, 82)
+        Me.Button3.Location = New System.Drawing.Point(6, 150)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(95, 23)
         Me.Button3.TabIndex = 4
@@ -211,7 +211,7 @@ Partial Class Addons
         Me.Button2.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button2.BackgroundImage = Global.trrblauncher.My.Resources.Resources.DarkBackground
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(6, 53)
+        Me.Button2.Location = New System.Drawing.Point(6, 179)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(95, 23)
         Me.Button2.TabIndex = 3
