@@ -83,16 +83,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Public ReadOnly Property console() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("console", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Public ReadOnly Property DarkBackground() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("DarkBackground", resourceCulture)
@@ -150,16 +140,6 @@ Namespace My.Resources
         Public ReadOnly Property globelogo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("globelogo", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property HappyHolidays() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("HappyHolidays", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

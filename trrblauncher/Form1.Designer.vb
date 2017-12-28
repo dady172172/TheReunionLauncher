@@ -25,7 +25,6 @@ Partial Class TRRMainForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TRRMainForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripDropDownButton()
@@ -72,7 +71,6 @@ Partial Class TRRMainForm
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.ToolStrip3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -90,7 +88,6 @@ Partial Class TRRMainForm
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.GroupBox3)
         Me.Panel1.Controls.Add(Me.GroupBox2)
         Me.Panel1.Controls.Add(Me.GroupBox1)
@@ -100,25 +97,15 @@ Partial Class TRRMainForm
         Me.Panel1.Controls.Add(Me.GroupBox8)
         Me.Panel1.Location = New System.Drawing.Point(21, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(719, 454)
+        Me.Panel1.Size = New System.Drawing.Size(719, 404)
         Me.Panel1.TabIndex = 0
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.trrblauncher.My.Resources.Resources.HappyHolidays
-        Me.PictureBox1.Location = New System.Drawing.Point(296, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(126, 55)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
         '
         'GroupBox3
         '
         Me.GroupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox3.Controls.Add(Me.ToolStrip3)
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox3.Location = New System.Drawing.Point(338, 233)
+        Me.GroupBox3.Location = New System.Drawing.Point(338, 177)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(212, 105)
         Me.GroupBox3.TabIndex = 7
@@ -163,7 +150,7 @@ Partial Class TRRMainForm
         Me.GroupBox2.Controls.Add(Me.LinkLabel4)
         Me.GroupBox2.Controls.Add(Me.CheckBox1)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox2.Location = New System.Drawing.Point(338, 122)
+        Me.GroupBox2.Location = New System.Drawing.Point(338, 66)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(212, 105)
         Me.GroupBox2.TabIndex = 5
@@ -216,7 +203,7 @@ Partial Class TRRMainForm
         Me.GroupBox1.Controls.Add(Me.TextBoxInstallDirectory)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox1.Location = New System.Drawing.Point(169, 61)
+        Me.GroupBox1.Location = New System.Drawing.Point(169, 5)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(381, 55)
         Me.GroupBox1.TabIndex = 4
@@ -254,7 +241,7 @@ Partial Class TRRMainForm
         Me.GroupBox7.Controls.Add(Me.RadioButton2)
         Me.GroupBox7.Controls.Add(Me.RadioButton1)
         Me.GroupBox7.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox7.Location = New System.Drawing.Point(338, 344)
+        Me.GroupBox7.Location = New System.Drawing.Point(338, 288)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(212, 105)
         Me.GroupBox7.TabIndex = 6
@@ -386,7 +373,7 @@ Partial Class TRRMainForm
         Me.GroupBox10.Controls.Add(Me.LinkLabel2)
         Me.GroupBox10.Controls.Add(Me.Label5)
         Me.GroupBox10.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox10.Location = New System.Drawing.Point(169, 233)
+        Me.GroupBox10.Location = New System.Drawing.Point(169, 177)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(163, 105)
         Me.GroupBox10.TabIndex = 3
@@ -421,7 +408,7 @@ Partial Class TRRMainForm
         Me.GroupBox9.Controls.Add(Me.LinkLabel3)
         Me.GroupBox9.Controls.Add(Me.Label3)
         Me.GroupBox9.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox9.Location = New System.Drawing.Point(169, 344)
+        Me.GroupBox9.Location = New System.Drawing.Point(169, 288)
         Me.GroupBox9.Name = "GroupBox9"
         Me.GroupBox9.Size = New System.Drawing.Size(163, 105)
         Me.GroupBox9.TabIndex = 2
@@ -456,7 +443,7 @@ Partial Class TRRMainForm
         Me.GroupBox8.Controls.Add(Me.LinkLabel1)
         Me.GroupBox8.Controls.Add(Me.Label1)
         Me.GroupBox8.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox8.Location = New System.Drawing.Point(169, 122)
+        Me.GroupBox8.Location = New System.Drawing.Point(169, 66)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(163, 105)
         Me.GroupBox8.TabIndex = 1
@@ -494,7 +481,7 @@ Partial Class TRRMainForm
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton3, Me.ToolStripButton4, Me.ToolStripButton2, Me.ToolStripButton5})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(837, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(758, 25)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -547,7 +534,7 @@ Partial Class TRRMainForm
         Me.PanelBackground1.Controls.Add(Me.Panel1)
         Me.PanelBackground1.Location = New System.Drawing.Point(0, 28)
         Me.PanelBackground1.Name = "PanelBackground1"
-        Me.PanelBackground1.Size = New System.Drawing.Size(825, 457)
+        Me.PanelBackground1.Size = New System.Drawing.Size(747, 408)
         Me.PanelBackground1.TabIndex = 5
         '
         'Timer3
@@ -563,7 +550,7 @@ Partial Class TRRMainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(837, 484)
+        Me.ClientSize = New System.Drawing.Size(758, 440)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.PanelBackground1)
         Me.DoubleBuffered = True
@@ -577,7 +564,6 @@ Partial Class TRRMainForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "The Reunion Reborn Launcher"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.ToolStrip3.ResumeLayout(False)
         Me.ToolStrip3.PerformLayout()
@@ -645,5 +631,4 @@ Partial Class TRRMainForm
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
-    Friend WithEvents PictureBox1 As PictureBox
 End Class
