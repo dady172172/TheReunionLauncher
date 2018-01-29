@@ -32,7 +32,7 @@ Public Class TRRMainForm
     Public Sub TRRMainForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         patchInfoTXT = Nothing
         If My.Settings.workingdir = "" Then
-            MsgBox("Unable to locate wow.exe. Please set directory to wow.exe.", MsgBoxStyle.OkOnly, "No Directory Set")
+            MsgBox("Unable to locate wow.exe. Please set the correct path to wow.exe.", MsgBoxStyle.OkOnly, "No Directory Set")
             My.Settings.workingdir = "wow"
             My.Settings.Save()
         End If
@@ -120,7 +120,7 @@ Public Class TRRMainForm
             If File.Exists(FBD1.SelectedPath & "/Wow.exe") Then
                 My.Settings.workingdir = FBD1.SelectedPath
                 My.Settings.Save()
-                MsgBox("Saved Path. You may now download patches or play.")
+                MsgBox("Saved Path. You may now download our patches or press play.")
                 TRRMainForm_Load(sender:=Nothing, e:=EventArgs.Empty)
             Else
                 MsgBox("Unable to locate Wow.exe in that directory. Please try again.")
@@ -389,7 +389,7 @@ Public Class TRRMainForm
 
     Private Sub SetScreenRez()
         If Not File.Exists(curdirdim & "\WTF\Config.wtf") Then
-            MsgBox("Unable to file config.wtf file.")
+        MsgBox("Unable to find config.wtf file.")
             Exit Sub
         End If
 
