@@ -69,8 +69,8 @@ Partial Class Addons
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(95, 23)
         Me.Button6.TabIndex = 3
-        Me.Button6.Text = "Install Zip"
-        Me.ToolTip1.SetToolTip(Me.Button6, "Install an addon that you downloaded from the internet. Must be a zipfile.")
+        Me.Button6.Text = "Install Addon"
+        Me.ToolTip1.SetToolTip(Me.Button6, "Install an addon that you've downloaded from the internet. Must be a zipfile.")
         Me.Button6.UseVisualStyleBackColor = False
         '
         'ToolStrip1
@@ -121,7 +121,7 @@ Partial Class Addons
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(166, 263)
         Me.RichTextBox1.TabIndex = 1
-        Me.RichTextBox1.Text = "Select an addon for description."
+        Me.RichTextBox1.Text = "Select an addon for a description."
         '
         'Button1
         '
@@ -147,7 +147,7 @@ Partial Class Addons
         Me.ListBox1.Size = New System.Drawing.Size(179, 292)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 0
-        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see discription. Once selected you can use the download button" &
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select an addon to see the description. Once selected you can use the download button" &
         ".")
         '
         'GroupBox2
@@ -189,7 +189,7 @@ Partial Class Addons
         Me.Button4.Size = New System.Drawing.Size(95, 23)
         Me.Button4.TabIndex = 5
         Me.Button4.Text = "Delete All"
-        Me.ToolTip1.SetToolTip(Me.Button4, "Deletes all addons except the default addons wow needs.")
+        Me.ToolTip1.SetToolTip(Me.Button4, "Deletes all addons except the default addons World of Warcraft needs.")
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
@@ -202,7 +202,7 @@ Partial Class Addons
         Me.Button3.Size = New System.Drawing.Size(95, 23)
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Backup"
-        Me.ToolTip1.SetToolTip(Me.Button3, "Backup addons folder. You can find the backup in your interface folder named AddO" &
+        Me.ToolTip1.SetToolTip(Me.Button3, "Backup your addons folder. You can find the backup in your interface folder named AddO" &
         "ns.zip.")
         Me.Button3.UseVisualStyleBackColor = False
         '
