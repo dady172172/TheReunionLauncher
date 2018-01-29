@@ -40,13 +40,13 @@ Public Class Download
         Label4.Text = ""
         ProgressBar1.Value = 0
         GetSettings()
-        If setType = "model" And setInstall = "Download" Then Label1.Text = "Download Model Patches" : Label2.Text = "Click start to download Model patchs." : Me.Text = "Download"
+        If setType = "model" And setInstall = "Download" Then Label1.Text = "Download Model Patches" : Label2.Text = "Click start to download Model patches." : Me.Text = "Download"
         If setType = "model" And setInstall = "Uninstall" Then Label1.Text = "Delete Model Patches" : Label2.Text = "Click start to delete Model patches" : Me.Text = "Delete"
-        If setType = "login" And setInstall = "Download" Then Label1.Text = "Download Login Screen Patch" : Label2.Text = "Click start to download the Login Screen patch" : Me.Text = "Download"
-        If setType = "login" And setInstall = "Uninstall" Then Label1.Text = "Delete Login Screen Patch" : Label2.Text = "Click start to delete Login Screen patch" : Me.Text = "Delete"
-        If setType = "water" And setInstall = "Download" Then Label1.Text = "Download Water Patch" : Label2.Text = "Click start to download Water patch" : Me.Text = "Download"
-        If setType = "water" And setInstall = "Uninstall" Then Label1.Text = "Delete Water Patch" : Label2.Text = "Click start to delete Water patch" : Me.Text = "Delete"
-        If setType = "backup" Then Label1.Text = "Backup Addons Folder" : Label2.Text = "Click start to backup your addons folder. When finished you can find AddOns.zip in the interface folder. If Addons.zip exist it will be deleted." : Me.Text = "Backup"
+        If setType = "login" And setInstall = "Download" Then Label1.Text = "Download Loginscreen Patch" : Label2.Text = "Click start to download the Loginscreen patch" : Me.Text = "Download"
+        If setType = "login" And setInstall = "Uninstall" Then Label1.Text = "Delete Loginscreen Patch" : Label2.Text = "Click start to delete Loginscreen patch" : Me.Text = "Delete"
+        If setType = "water" And setInstall = "Download" Then Label1.Text = "Download Water Patch" : Label2.Text = "Click start to download the Water patch" : Me.Text = "Download"
+        If setType = "water" And setInstall = "Uninstall" Then Label1.Text = "Delete Water Patch" : Label2.Text = "Click start to delete the Water patch" : Me.Text = "Delete"
+        If setType = "backup" Then Label1.Text = "Backup Addons Folder" : Label2.Text = "Click start to backup your addons folder. When finished you can find AddOns.zip in the interface folder. If Addons.zip already exists it will be removed." : Me.Text = "Backup"
         If setType = "installAddon" Then Label1.Text = "Download " : Label2.Text = "Click Start to download addon. " & vbNewLine & setInstall : Me.Text = "Download"
         If setType = "DeleteAddons" Then Label1.Text = "Delete Addons" : Label2.Text = "Click start to delete:" & vbNewLine & setInstall : Me.Text = "Delete"
         CheckForIllegalCrossThreadCalls = False
@@ -69,7 +69,7 @@ Public Class Download
         ProgressBar1.Value = 25 : File.Delete(FileModelB) : WhatAmIWorkingOn = "mc"
         ProgressBar1.Value = 50 : File.Delete(FileModelC) : WhatAmIWorkingOn = "md"
         ProgressBar1.Value = 75 : File.Delete(FileModelD) : Threading.Thread.Sleep(100)
-        ProgressBar1.Value = 100 : MsgBox("Model patches have been deleted!") : Close()
+        ProgressBar1.Value = 100 : MsgBox("Model patches have been removed!") : Close()
 
     End Sub
 
@@ -79,7 +79,7 @@ Public Class Download
         File.Delete(FileLogin)
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Login Screen patch has been deleted!")
+        MsgBox("Loginscreen patch has been removed!")
         Me.Close()
     End Sub
 
@@ -89,13 +89,13 @@ Public Class Download
         File.Delete(FileWater)
         Threading.Thread.Sleep(100)
         ProgressBar1.Value = 100
-        MsgBox("Water patch has been deleted!")
+        MsgBox("Water patch has been removed!")
         Me.Close()
     End Sub
 
     Private Sub DownloadModel()
         ProgressBar1.Show()
-        Label2.Text = "Downloading paches. Please Wait."
+        Label2.Text = "Downloading patches. Please Wait."
         Button1.Text = "Cancel"
         If File.Exists(FileModel) Then File.Delete(FileModel)
         Modelwc.DownloadFileAsync(New Uri(DLModel), FileModel)
@@ -128,7 +128,7 @@ Public Class Download
         If File.Exists(ZipToUnpack) Then File.Delete(ZipToUnpack)
         ProgressBar1.Value = 100
         Threading.Thread.Sleep(100)
-        MsgBox("Moddel patches have been downloaded.")
+        MsgBox("Model patches have been installed.")
         Me.Close()
 
     End Sub
@@ -150,7 +150,7 @@ Public Class Download
         ElseIf setType = "installAddon" Then
             InstallAddon()
         Else
-            MsgBox("You shouldent see this message box. If you do please contact keathunsar on discord and let him know you have seen this message." & vbNewLine & " ERROR = download.vb1", MsgBoxStyle.OkOnly, "ERROR!!!")
+            MsgBox("You shouldn't see this message box. If you do please contact keathunsar on discord and let him know you have seen this message." & vbNewLine & " ERROR = download.vb1", MsgBoxStyle.OkOnly, "ERROR!!!")
         End If
     End Sub
 
@@ -214,7 +214,7 @@ Public Class Download
     Private Sub Loginwc_DownloadFileCompleted(sender As Object, e As AsyncCompletedEventArgs) Handles Loginwc.DownloadFileCompleted
         ProgressBar1.Value = 100
         Label3.Text = ""
-        MsgBox("Login screen patch has been downloaded.", MsgBoxStyle.OkOnly, "Done!")
+        MsgBox("Loginscreen patch has been installed.", MsgBoxStyle.OkOnly, "Done!")
         Me.Close()
     End Sub
 
@@ -229,7 +229,7 @@ Public Class Download
     Private Sub Waterwc_DownloadFileCompleted(sender As Object, e As AsyncCompletedEventArgs) Handles Waterwc.DownloadFileCompleted
         ProgressBar1.Value = 100
         Label3.Text = ""
-        MsgBox("Water patch has been downloaded.", MsgBoxStyle.OkOnly, "Done!")
+        MsgBox("Water patch has been installed.", MsgBoxStyle.OkOnly, "Done!")
         Me.Close()
     End Sub
 
@@ -248,7 +248,7 @@ Public Class Download
 
     Private Sub DeleteAddons()
         Button1.Text = "Cancel"
-        Label2.Text = "Deleteing Addons" & String.Join(", ", Addons.AddonsToDeleteList.ToArray())
+        Label2.Text = "Deleting Addons" & String.Join(", ", Addons.AddonsToDeleteList.ToArray())
         ProgressBar1.Show()
         ProgressBar1.Value = 0
         Label4.Text = "0%"
