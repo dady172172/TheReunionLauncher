@@ -165,7 +165,7 @@ Partial Class TRRMainForm
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(108, 21)
         Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Set realms list"
+        Me.CheckBox2.Text = "Set realmslist"
         Me.ToolTip1.SetToolTip(Me.CheckBox2, "Sets realmlist")
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
@@ -353,7 +353,7 @@ Partial Class TRRMainForm
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Close"
-        Me.ToolTip1.SetToolTip(Me.RadioButton2, "Closes launcher on start")
+        Me.ToolTip1.SetToolTip(Me.RadioButton2, "Closes Launcher on start")
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton1
@@ -364,7 +364,7 @@ Partial Class TRRMainForm
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Minimize"
-        Me.ToolTip1.SetToolTip(Me.RadioButton1, "Minimize launcher on start")
+        Me.ToolTip1.SetToolTip(Me.RadioButton1, "Minimize Launcher on start")
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'GroupBox10
@@ -413,7 +413,7 @@ Partial Class TRRMainForm
         Me.GroupBox9.Size = New System.Drawing.Size(163, 105)
         Me.GroupBox9.TabIndex = 2
         Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "Login Screen Patch"
+        Me.GroupBox9.Text = "Loginscreen Patch"
         '
         'LinkLabel3
         '

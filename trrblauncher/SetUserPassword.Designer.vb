@@ -94,7 +94,7 @@ Partial Class SetUserPassword
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(180, 148)
         Me.ListBox1.TabIndex = 2
-        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select a username to edit or delete")
+        Me.ToolTip1.SetToolTip(Me.ListBox1, "Select a Username to edit or delete")
         '
         'Button1
         '
